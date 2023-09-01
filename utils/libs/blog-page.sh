@@ -1,30 +1,49 @@
 #!/usr/bin/bash
 
 function get_blog_pages () {
+    ## The blog/project dir
 	local BLOG_DIR=~/Blog
-	local VAR_NAME="${1:?"No variable was provided to lod the pages into"}"
+
+    ## Getting the variable to set the list to externally
+	local VAR_NAME="${1:?"get_blog_pages : No variable was provided to lod the pages into"}"
 	local -n VAR="$VAR_NAME"
+
+    ## Setting the list to the available blog files.
 	VAR=( $(ls $BLOG_DIR/blog/????-??-??.wiki) )
 
 }
 
 function get_last_5_pages (){
+    ## Index to use in the iterrations later
+    local INDEX
+
+    ## Local variable to store pages (locally)
 	local -a pages
+
+    ## Variable name to dump list items into
+    local VAR_NAME="${1:?"get_last_5_pages : A variable name was not passed into the function"}"
+    ## Reference variable to handle setting value of external variable
+    local -n VAR="$VAR_NAME"
+
+    ## Page Count Variable
 	local PAGES
+    ## Grabbing pages from above function
 	get_blog_pages pages
 
+    ## Getting page count
 	PAGES=${#pages[@]};
 
+    # if the count is less than the minimum, then just set the list as the one grabbed above
 	if [[ $PAGES -lt 5 ]]; then
-		for (( i=$((PAGES-1)); i==0; i--)); do
-			echo ${i}
-		done
+        VAR=( ${pages[@]} )
 	else
-		echo "Hi"
+        ## Otherwise, itterate through the last 5 blog posts
+        INDEX=-5
+        while [[ $INDEX -ne 0 ]]; do
+            VAR+=( "${pages[$INDEX]}" )
+            ## Increment the index so that we get closer and closer to end of the list
+            ((INDEX++))
+        done
 	fi
 }
 
-
-if [[ "$0" == *"blog-page.sh" ]]; then
-	get_last_5_pages
-fi
