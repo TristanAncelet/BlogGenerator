@@ -1,15 +1,14 @@
 #!/usr/bin/bash
 
 function get_blog_pages () {
-    ## The blog/project dir
-	local BLOG_DIR=~/Blog
-
     ## Getting the variable to set the list to externally
 	local VAR_NAME="${1:?"get_blog_pages : No variable was provided to lod the pages into"}"
 	local -n VAR="$VAR_NAME"
 
     ## Setting the list to the available blog files.
-	VAR=( $(ls $BLOG_DIR/blog/????-??-??.wiki) )
+    if ls -1 $BLOG_DIR/*.wiki >/dev/null 2>&1; then
+        VAR=( $(ls -1 $BLOG_DIR/*.wiki | grep -v 'index.wiki' ) )
+    fi
 
 }
 
