@@ -1,0 +1,10 @@
+%title Blog Index
+
+----
+[[about-me.wiki|About Me]]
+----
+
+= Blog Posts =
+--------------
+[[hello-world.wiki|Hello World (2023/09/02)]]
+

@@ -1,0 +1,35 @@
+%title Hello World
+
+
+---------------------------
+[[index.wiki|Index]]
+---------------------------
+
+*Date:* 2023/09/02
+*Author:* Tristan Ancelet
+
+= Hello World =
+---------------
+Hello everyone, I'm terrible at things like blogging so I'll just start off with the basics. My name is Tristan Ancelet. I'm a technologist both in hobby and in work.
+
+I am also a Systems Engineer and I dabble in software to automate portions of my work and to make administration and backup of my companies infrastructure much easier.
+
+== My Journey So Far ==
+---------------
+I started working in IT when I was 24, as a Network Tech for an ISP. In the next 2 years I then expanded into System Administration and eventually System Engineering. 
+
+
+== Goals ==
+---------------
+=== Long Term ===
+---------------
+As far as my goals going forward. My long term goal is to use this degree to become much more comfortable with development so that I can get into DevOps Engineering. As having experience with development and the associated technologies (Source Control/Git, GitLab, GitHub, etc) will allow me to expand my scope to encompass those topics more easily. Which will get me closer to that goal.
+
+=== Short Term ===
+---------------
+My short Term goals is to graduate with a bachelors in Computer Science. So that I will have more time to be able to focus on my career, and to give me more time to improve my health (due to a very stationary and sedentary job).
+
+
+== This Blog ==
+---------------
+This blog is just something I whipped up with using VimWiki and some auto-generation bash scripts. I am focusing on reliable (and convenient) generation of the website and NOT visual appeal. I will eventually change to custom CSS so that the style is more unique and easier to look at. However, this is far from something I feel is a priority in the short term.
