@@ -5,8 +5,8 @@
 [[index.wiki|Index]]
 ---------------------------
 
-*Date:* 2023/09/02
-*Author:* Tristan Ancelet
+*Date:* 2023/09/02  
+*Author:* Tristan Ancelet  
 
 = Hello World =
 ---------------
