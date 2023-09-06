@@ -7,7 +7,7 @@ function get_blog_pages () {
 
     ## Setting the list to the available blog files.
     if ls -1 $BLOG_DIR/*.wiki >/dev/null 2>&1; then
-        VAR=( $(ls -1 $BLOG_DIR/*.wiki | grep -v 'index.wiki' ) )
+        VAR=( $(ls -1 $BLOG_DIR/*.wiki | grep -Ev 'index.wiki|about-me.wiki' ) )
     fi
 
 }
