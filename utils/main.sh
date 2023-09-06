@@ -28,6 +28,12 @@ while [[ $# -ne 0 ]]; do
             generate_index
             break
             ;;
+
+        -r | --regenrate )
+            ## This will regnerate index
+            generate_index
+            exit 0
+            ;;
         *)
             usage
             exit 1
