@@ -1,10 +1,12 @@
 %title Blog Index
 
-----
+--------
 [[about-me.wiki|About Me]]
-----
+--------
 
-= Blog Posts =
---------------
+## Blog Posts
+-------------
+
+[[blog-issue.wiki|Blog Issue (2023/09/05)]]
 [[hello-world.wiki|Hello World (2023/09/02)]]
 
