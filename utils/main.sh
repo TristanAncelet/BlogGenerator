@@ -9,7 +9,7 @@ include generate
 
 usage () {
     cat <<EOF
-main.sh [ -n | --new ] "<title>" "<filename>"  
+main.sh [ -n | --new "<title>" "<filename>" ] [ -r | --regenerate ] 
 EOF
 }
 
