@@ -39,9 +39,8 @@ Here is the commands it did to whitelist DNS (running firewalld as a device side
 </p>
 
 <pre bash>
-    firewall-cmd --perm --zone=public --add-service=dns
-    
-    firewall-cmd --reload
+firewall-cmd --perm --zone=public --add-service=dns
+firewall-cmd --reload
 </pre>
 
 <p>
@@ -49,7 +48,7 @@ After checking that DNS was resolving with dig, I was able to visit my site with
 </p>
 
 <pre bash>
-    dig blog.tristanancelet.com
+dig blog.tristanancelet.com
 </pre>
 
 </body>

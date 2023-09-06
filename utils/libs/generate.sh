@@ -40,6 +40,8 @@ echo $TITLES
 
 *Date:* `date +'%Y/%m/%d'`
 *Author:* Tristan Ancelet
+
+= $PAGE_TITLE =
 EOF
 
 return 0
@@ -69,7 +71,7 @@ for file in ${blog_files[@]}; do
     FILENAME="$(basename $file)"
     DATE="$(grep -i 'date:' $file | grep -Eo '[0-9]{4}/[0-9]{2}/[0-9]{2}')"
     
-    echo "[[$FILENAME|$TITLE ($DATE)]]"
+    echo -e "- [[$FILENAME|$TITLE ($DATE)]] \n"
 done
 `
 
