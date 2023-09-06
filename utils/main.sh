@@ -10,6 +10,10 @@ include generate
 usage () {
     cat <<EOF
 main.sh [ -n | --new "<title>" "<filename>" ] [ -r | --regenerate ] 
+
+Legend:
+-n | --new             Create new blog post/wiki with provided information
+-r | --regenerate      Regenerate your index.wiki file
 EOF
 }
 
