@@ -52,6 +52,13 @@ function generate_index () {
     cat >$OUTPUT <<EOF
 %title Blog Index
 
+--------
+[[about-me.wiki|About Me]]
+--------
+
+## Blog Posts
+-------------
+
 `
 for file in ${blog_files[@]}; do
     read JUNK TITLE <<< "$( grep '%title' $file )"
