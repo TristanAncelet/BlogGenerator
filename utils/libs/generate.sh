@@ -24,15 +24,19 @@ function generate_blog_post () {
 
 
 ---------------------------
+[[index.wiki|Index]]
+---------------------------
+
+last 5 posts
+---------------------------
 `
-TITLES="[[index.wiki|Index]]"
+TITLES=""
 for page in ${last_few_posts[@]}; do
     read JUNK TITLE <<< "$( grep '%title' $page )"
-    TITLES="${TITLES} [[$page|$TITLE]]"
+    TITLES="${TITLES}\n - [[$page|$TITLE]]"
 done
 echo $TITLES
 `
----------------------------
 
 *Date:* `date +'%Y/%m/%d'`
 *Author:* Tristan Ancelet
