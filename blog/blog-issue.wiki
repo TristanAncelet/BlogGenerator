@@ -17,12 +17,16 @@ I had a backup DNS server as well, but after looking into the VM (that was still
 
 Here is the commands it did to whitelist DNS (running firewalld as a device side firewall)
 
+{{{bash
     firewall-cmd --perm --zone=public --add-service=dns
     
     firewall-cmd --reload
+}}}
 
 After checking that DNS was resolving with dig, I was able to visit my site with no more issues.
 
+{{{bash
     dig blog.tristanancelet.com
+}}}
 
 
