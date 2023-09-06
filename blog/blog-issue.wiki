@@ -16,16 +16,13 @@ Looks like my master DNS server was down for the last 3 days (didn't know until 
 I had a backup DNS server as well, but after looking into the VM (that was still running), it turns out that I never whitelisted the DNS port (53/udp) on it. So it's entire life has been failure (as it's been the backup for several months). My thought is that I *DID* whitelist it but not perminately. So after a reboot it cleared the config and DNS traffic wasn't whitelisted it anymore.
 
 Here is the commands it did to whitelist DNS (running firewalld as a device side firewall)
-```bash
-# Adding the DNS service to the public zone and reloading firewalld to make sure the config change takes
-firewall-cmd --perm --zone=public --add-service=dns
-firewall-cmd --reload
-```
+
+    # Adding the DNS service to the public zone and reloading firewalld to make sure the config change takes
+    firewall-cmd --perm --zone=public --add-service=dns
+    firewall-cmd --reload
 
 After checking that DNS was resolving with dig, I was able to visit my site with no more issues.
 
-```bash
-dig blog.tristanancelet.com
-```
+    dig blog.tristanancelet.com
 
 
