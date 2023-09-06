@@ -28,5 +28,9 @@ while [[ $# -ne 0 ]]; do
             generate_index
             break
             ;;
+        *)
+            usage
+            exit 1
+            ;;
     esac
 done
