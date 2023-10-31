@@ -7,8 +7,8 @@
 
 last 5 posts
 ---------------------------
-- [[page|Blog Issue]]
-- [[page|Hello World]]
+- [[1693890000-blog-issue.wiki|Blog Issue]]
+- [[1693630800-hello-world.wiki|Hello World]]
 
 *Date:* 2023/10/30 
 
