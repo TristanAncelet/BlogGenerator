@@ -33,7 +33,7 @@ last 5 posts
 TITLES=""
 for page in ${last_few_posts[@]}; do
     read JUNK TITLE <<< "$( grep '%title' $page )"
-    TITLES="${TITLES}\n - [[$(basename page)|$TITLE]]"
+    TITLES="${TITLES}\n - [[$(basename $page)|$TITLE]]"
 done
 echo -e $TITLES
 `
