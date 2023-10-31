@@ -1,0 +1,31 @@
+%title Blog Issue
+
+
+---------------------------
+[[index.wiki|Index]] [[/home/tristan/Blog/blog/hello-world.wiki|Hello World]]
+---------------------------
+
+*Date:* 2023/09/05
+
+*Author:* Tristan Ancelet
+
+= Blog Issue =
+== DNS ==
+Looks like my master DNS server was down for the last 3 days (didn't know until the teacher mentioned it). Had to end up taking a look at my provider and it looks like my master DNS server had crashed at some point. After restarting it I got everything started up and it seems to have come back up. 
+
+I had a backup DNS server as well, but after looking into the VM (that was still running), it turns out that I never whitelisted the DNS port (53/udp) on it. So it's entire life has been failure (as it's been the backup for several months). My thought is that I *DID* whitelist it but not perminately. So after a reboot it cleared the config and DNS traffic wasn't whitelisted it anymore.
+
+Here is the commands it did to whitelist DNS (running firewalld as a device side firewall)
+
+{{{bash
+firewall-cmd --perm --zone=public --add-service=dns
+firewall-cmd --reload
+}}}
+
+After checking that DNS was resolving with dig, I was able to visit my site with no more issues.
+
+{{{bash
+dig blog.tristanancelet.com
+}}}
+
+
