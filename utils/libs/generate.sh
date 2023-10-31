@@ -35,7 +35,7 @@ for page in ${last_few_posts[@]}; do
     read JUNK TITLE <<< "$( grep '%title' $page )"
     TITLES="${TITLES}\n - [[$(basename page)|$TITLE]]"
 done
-echo $TITLES
+echo -e $TITLES
 `
 
 *Date:* `date +'%Y/%m/%d'`
@@ -71,7 +71,7 @@ for file in ${blog_files[@]}; do
     FILENAME="$(basename $file)"
     DATE="$(grep -i 'date:' $file | grep -Eo '[0-9]{4}/[0-9]{2}/[0-9]{2}')"
     
-    echo -e "- [[$FILENAME|$TITLE ($DATE)]] \n"
+    echo -e "- [[$FILENAME|$DATE - $TITLE ]] \n"
 done
 `
 

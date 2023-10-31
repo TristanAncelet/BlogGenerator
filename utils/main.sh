@@ -25,9 +25,10 @@ while [[ $# -ne 0 ]]; do
             $1 = Title
             $2 = Filename
             "
+	    DATESTAMP=`date +%s`
             TITLE="${1:?"main.sh : Title was not provided"}"
             FILENAME="${2:?"main.sh : Filename was not provided"}"
-            generate_blog_post "$TITLE" "$FILENAME"
+            generate_blog_post "$TITLE" "$DATESTAMP-$FILENAME"
             sync
             generate_index
             break
