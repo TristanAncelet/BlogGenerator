@@ -7,7 +7,9 @@
 ## Blog Posts
 -------------
 
-- [[blog-issue.wiki|Blog Issue (2023/09/05)]] 
+- [[1698642000-first-ticket.wiki|2023/10/30 - First Ticket ]] 
 
-- [[hello-world.wiki|Hello World (2023/09/02)]] 
+- [[1693890000-blog-issue.wiki|2023/09/05 - Blog Issue ]] 
+
+- [[1693630800-hello-world.wiki|2023/09/02 - Hello World ]] 
 
