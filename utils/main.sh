@@ -35,8 +35,8 @@ while [[ $# -ne 0 ]]; do
             ;;
 
         -r | --regenrate )
-            ## This will regnerate index
-            generate_index
+            ## This will run all generate scripts/functions in the generate_hook function
+            generate_hook
             exit 0
             ;;
         *)
