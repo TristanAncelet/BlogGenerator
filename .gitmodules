@@ -1,0 +1,3 @@
+[submodule "Site"]
+	path = Site
+	url = gitea@git.arcanium.tech:tristan/blog-site
