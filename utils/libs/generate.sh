@@ -78,3 +78,7 @@ done
 EOF
     
 }
+
+function generate_hook() {
+	generate_index
+}
