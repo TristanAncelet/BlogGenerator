@@ -16,3 +16,4 @@ I am Tristan Ancelet, an aspiring technologist. I enjoy working with both softwa
 - [[https://www.linkedin.com/in/tristan-ancelet/|LinkedIn]]
 - [[https://github.com/TristanAncelet|GitHub]]
 - [[https://github.com/TristanAncelet/BlogGenerator|GitHub Repo for this Project]]
+- [[https://git.arcanium.tech/tristan|My GitServer]]
