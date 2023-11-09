@@ -40,6 +40,4 @@ if [[ ! -f $VIM_AUTOLOAD_DIR/$PLUG_FILENAME ]]; then
 	curl "$PLUG_DOWNLOAD_URL" -o $PLUG_DOWNLOAD_PATH
 fi
 
-
-
 # END: Work
