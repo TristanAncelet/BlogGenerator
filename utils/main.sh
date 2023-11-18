@@ -30,7 +30,7 @@ while [[ $# -ne 0 ]]; do
             FILENAME="${2:?"main.sh : Filename was not provided"}"
             generate_blog_post "$TITLE" "$DATESTAMP-$FILENAME"
             sync
-            generate_index
+            generate_hook
             break
             ;;
 
