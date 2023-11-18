@@ -39,6 +39,7 @@ echo -e $TITLES
 `
 
 *Date:* `date +'%Y/%m/%d'`
+
 *Author:* Tristan Ancelet
 
 = $PAGE_TITLE =
