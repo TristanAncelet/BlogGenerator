@@ -37,8 +37,8 @@ function get_last_5_pages (){
         VAR=( ${pages[@]} )
 	else
         ## Otherwise, itterate through the last 5 blog posts
-        INDEX=-5
-        while [[ $INDEX -ne 0 ]]; do
+        INDEX=0
+        while [[ $INDEX -ne 5 ]]; do
             VAR+=( "${pages[$INDEX]}" )
             ## Increment the index so that we get closer and closer to end of the list
             ((INDEX++))
