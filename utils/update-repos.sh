@@ -3,7 +3,7 @@
 ## If user is not running this in the root of the project dir
 if [[ ! -d utils ]]; then
 	## Change directory to project dir
-	cd `dirname $1`
+	cd `dirname $0`
 	cd ..
 fi
 
